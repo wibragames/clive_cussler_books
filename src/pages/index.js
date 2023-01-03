@@ -1,19 +1,44 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import { Link, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const IndexPage = () => {
+const IndexPage = ({
+  data: {
+    allWpBook: { edges: books },
+  },
+}) => {
+
   return (
-    <main>
-      <Layout pageTitle="Welcome to Clive Cussler Books!">
-      <p>Lorem ipsum</p>
-      <StaticImage
-        alt="randomized unsplash image!"
-        src="https://source.unsplash.com/random/800x600"
-      />
-      </Layout>
-    </main>
+    <Layout pageTitle="Books of Clive Cussler">
+      {books.map((item) => {
+        const book = item.node.bookMeta;
+        const slug = item.node.slug;
+        return <Link to={`/books/${slug}`}>
+          <p key={item.node.id}>{book.title}</p>
+        </Link>
+
+      })}
+    </Layout>
   )
 }
+
+export const query = graphql`
+query MyQuery {
+  allWpBook {
+    edges {
+      node {
+        bookMeta {
+          title
+          publisher
+        }
+        id
+        slug
+      }
+    }
+  }
+}
+
+`
 
 export default IndexPage
