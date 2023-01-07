@@ -1,5 +1,6 @@
 p {
     margin: 0;
+    align-self: center;
   }
   
   .wrapper {
@@ -29,16 +30,5 @@ p {
     text-transform: uppercase;
     font-weight: 600;
     color: black;
-    margin-right: auto;
-  }
-  
-  .title::after {
-    content: ".";
-    position: absolute;
-    right: -5px;
-    bottom: 3px;
-    font-size: 1.8rem;
-    font-family: serif;
-    color: #3922c0;
     margin-right: auto;
   }

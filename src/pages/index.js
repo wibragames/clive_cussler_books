@@ -48,7 +48,10 @@ const IndexPage = ({
       <section className={section}>
       <h2 className={subtitle}>Featured Books</h2>
       <p>
-         Here are some books that you might want to read. They are our featured books.
+      Our featured books section showcases some of the best and most popular titles by Clive Cussler.
+      These novels follow the thrilling escapades of characters like Dirk Pitt, Sam and Remi Fargo, and other larger-than-life heroes and heroines as they overcome impossible odds and solve mysteries.
+      From treasure hunting to stopping terrorists, these books are packed with action, suspense, and historical details that bring the stories to life.
+      Dive into the world of Clive Cussler's novels and experience the excitement for yourself.
       </p>
       <div className={items}>
         {homePage.featuredBooks.map(book => {

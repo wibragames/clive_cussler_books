@@ -4,12 +4,11 @@ import {
     title,
 } from "./footer.module.css"
 
-const Footer = ({ siteTitle, companyInfo }) => {
+const Footer = ({ siteTitle }) => {
     return (
         <footer className={wrapper}>
             <section>
                 <p className={title}>{siteTitle}</p>
-                <p>Bjarne van Looke</p>
                 <p>All rights reserved.</p>
             </section>
         </footer>
