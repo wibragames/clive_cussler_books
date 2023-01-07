@@ -42,7 +42,9 @@ const Bookpage = ({ data: {
           <p><span className={bookInfo}>Publishing date:</span> {book.publishingDate}</p>
           <p><span className={bookInfo}>Rating:</span> {book.rating}</p>
         </article>
-        <GatsbyImage className={bookPicture} image={image} alt={book.pictureCover.altText} />
+        <div>
+          <GatsbyImage className={bookPicture} image={image} alt={book.pictureCover.altText} />
+        </div>
       </section>
     </Layout>
   )
