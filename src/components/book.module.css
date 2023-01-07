@@ -1,0 +1,25 @@
+.wrapper {
+    display: block;
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    max-width: 350px;
+    max-height: 350px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 50%;
+  }
+  
+  .wrapper:hover .book-info {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .book-name {
+    margin: 0;
+    color: #3922c0;
+  }

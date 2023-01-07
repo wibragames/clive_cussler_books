@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+.header-picture {
+  width: 50;
+  height: 50;
+}
+
+.book-picture {
+  width: 50;
+  height: 50;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.header-title {
+  font-size: 6rem;
+  line-height: 5rem;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.CTA {
+  background-color: #3922c0;
+  color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.CTA:hover {
+  color: #3922c0;
+  background-color: #000;
+  border: 1px solid #3922c0;
+}
+
+.subtitle {
+  font-size: 4rem;
+  line-height: 3rem;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.section {
+  position: relative;
+  margin-top: 180px;
+  text-align: center;
+}
+
+.section::before,
+.section::after {
+  position: absolute;
+  display: inline-flex;
+  content: "";
+  background-size: 700px 700px;
+  height: 700px;
+  width: 700px;
+  z-index: -1;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+
+
+.description {
+  max-width: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    transform: translateX(-5%);
+  }
+}
+
+.book-roles {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.book-description {
+  margin-bottom: 2rem;
+}
+
+.book-info {
+  font-weight: 700;
+
+  color: #3922c0;
+}
